@@ -1,0 +1,4 @@
+/home/eric/workspace/eric/build/CMakeFiles/eric.dir
+/home/eric/workspace/eric/build/CMakeFiles/test.dir
+/home/eric/workspace/eric/build/CMakeFiles/edit_cache.dir
+/home/eric/workspace/eric/build/CMakeFiles/rebuild_cache.dir
