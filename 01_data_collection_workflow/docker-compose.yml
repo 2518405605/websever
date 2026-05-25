@@ -1,0 +1,19 @@
+services:
+  n8n:
+    container_name: n8n
+    image: ${N8N_IMAGE:-docker.n8n.io/n8nio/n8n:latest}
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      GENERIC_TIMEZONE: Asia/Shanghai
+      TZ: Asia/Shanghai
+      N8N_DEFAULT_LOCALE: zh-CN
+    volumes:
+      - ${N8N_DATA_DIR:-D:/py/n8n}:/home/node/.n8n
+      - ${N8N_EXTRA_DATA_DIR:-D:/py/n8ndata}:/home/node/n8ndata
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

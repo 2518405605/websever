@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# Logs and locks
+*.log
+logfile/
+*.lock
+
+# Local databases and service state
+*.sqlite
+*.db
+volumes/
+data/
+
+# Retained local files from pre-refactor layout
+.local_legacy/
